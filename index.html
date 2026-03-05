@@ -52,7 +52,7 @@
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
     .typing-cursor{display:inline-block;width:2px;height:13px;background:var(--accent-bright);margin-left:1px;vertical-align:middle;animation:blink 1s step-end infinite}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-    .hero-name{font-family:var(--font-display);font-size:clamp(36px,8vw,96px);font-weight:700;color:var(--navy);line-height:0.95;letter-spacing:-0.02em;margin-bottom:24px;opacity:0;animation:fadeUp 0.7s ease 0.5s forwards}
+    .hero-name{font-family:var(--font-display);font-size:clamp(48px,8vw,96px);font-weight:700;color:var(--navy);line-height:0.95;letter-spacing:-0.02em;margin-bottom:24px;opacity:0;animation:fadeUp 0.7s ease 0.5s forwards}
     .hero-name .dot{color:var(--accent-bright);text-shadow:0 0 20px rgba(59,130,246,0.5)}
     .hero-identity{font-family:var(--font-mono);font-size:clamp(11px,1.4vw,13px);color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0;animation:fadeUp 0.7s ease 0.65s forwards;font-weight:500}
     .hero-tagline{font-family:var(--font-mono);font-size:clamp(11px,1.4vw,13px);color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.7s ease 0.7s forwards}
@@ -96,8 +96,6 @@
     .cap-list{display:flex;flex-direction:column;gap:8px}
     .cap-item{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
     .cap-item::before{content:'';width:5px;height:5px;background:var(--accent-bright);border-radius:50%;flex-shrink:0;opacity:0.8}
-
-    /* DIFFERENTIATOR BLOCK */
     #differentiator{background:var(--navy);border-top:none}
     .diff-inner{max-width:780px}
     .diff-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:28px;display:flex;align-items:center;gap:12px}
@@ -106,7 +104,6 @@
     .diff-line1 span{color:rgba(255,255,255,0.7)}
     .diff-line2{font-family:var(--font-display);font-size:clamp(22px,3.5vw,36px);font-weight:700;color:#fff;line-height:1.25;letter-spacing:-0.01em;position:relative;padding-left:24px}
     .diff-line2::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:linear-gradient(to bottom,var(--accent-bright),rgba(59,130,246,0.2))}
-
     .work-list{display:flex;flex-direction:column;gap:1px;background:var(--accent-lt);border:1px solid var(--accent-lt)}
     .work-item{background:var(--white);padding:40px;display:grid;grid-template-columns:80px 1fr 1fr;gap:40px;align-items:start;transition:background 0.2s}
     .work-item:hover{background:#F0F7FF}
@@ -114,12 +111,6 @@
     .work-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:var(--navy);margin-bottom:10px}
     .work-desc{font-size:13px;color:var(--muted);line-height:1.7}
     .work-outcome{font-size:13px;color:var(--accent);line-height:1.7;padding-left:20px;border-left:3px solid var(--accent-bright)}
-    .tools-intro{font-size:14px;color:var(--muted);max-width:58ch;margin-bottom:40px}
-    .tools-grid{display:flex;flex-wrap:wrap;gap:12px}
-    .tool-chip{border:1px solid var(--accent-md);background:var(--white);padding:10px 20px;font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:0.06em;display:flex;align-items:center;gap:8px;transition:border-color 0.2s,color 0.2s,background 0.2s,box-shadow 0.2s}
-    .tool-chip::before{content:'';width:5px;height:5px;background:var(--accent-bright);border-radius:50%;opacity:0.7;transition:opacity 0.2s}
-    .tool-chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-lt);box-shadow:0 2px 12px rgba(59,130,246,0.15)}
-    .tool-chip:hover::before{opacity:1}
     .philosophy-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
     .philosophy-quote{font-family:var(--font-display);font-size:clamp(22px,3vw,32px);font-weight:600;color:var(--navy);line-height:1.3;letter-spacing:-0.01em;position:relative;padding-left:28px}
     .philosophy-quote::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:linear-gradient(to bottom,var(--accent-bright),var(--accent-lt))}
@@ -184,7 +175,6 @@
         <li><a href="#what">What I Do</a></li>
         <li><a href="#capabilities">Expertise</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#tools">Tools</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
@@ -213,113 +203,41 @@
       <p class="hero-focus"><span>// currently focused on</span> &nbsp;financial systems &nbsp;·&nbsp; data analytics &nbsp;·&nbsp; operational finance</p>
     </div>
   </section>
-
-  <!-- WHAT I DO -->
   <section id="what" class="section">
     <div class="container">
       <p class="section-label reveal">What I Do</p>
       <h2 class="section-title reveal">Three areas of focus</h2>
       <div class="what-grid">
-        <div class="what-card reveal">
-          <p class="what-num">01 /</p>
-          <p class="what-title">Financial Oversight</p>
-          <p class="what-desc">Monitoring budgets, tracking expenses, and analyzing variances to keep organizations fiscally accountable and grant-compliant.</p>
-        </div>
-        <div class="what-card reveal reveal-delay-1">
-          <p class="what-num">02 /</p>
-          <p class="what-title">Data & Analytics</p>
-          <p class="what-desc">Building Excel systems, Power BI dashboards, and financial reporting tools that transform raw operational data into clear, decision-ready insights.</p>
-        </div>
-        <div class="what-card reveal reveal-delay-2">
-          <p class="what-num">03 /</p>
-          <p class="what-title">Operational Systems</p>
-          <p class="what-desc">Designing workflows, automating reporting processes, and building the operational structure that makes financial systems scalable and reliable.</p>
-        </div>
+        <div class="what-card reveal"><p class="what-num">01 /</p><p class="what-title">Financial Oversight</p><p class="what-desc">Monitoring budgets, tracking expenses, and analyzing variances to keep organizations fiscally accountable and grant-compliant.</p></div>
+        <div class="what-card reveal reveal-delay-1"><p class="what-num">02 /</p><p class="what-title">Data & Analytics</p><p class="what-desc">Building Excel systems, Power BI dashboards, and financial reporting tools that transform raw operational data into clear, decision-ready insights.</p></div>
+        <div class="what-card reveal reveal-delay-2"><p class="what-num">03 /</p><p class="what-title">Operational Systems</p><p class="what-desc">Designing workflows, automating reporting processes, and building the operational structure that makes financial systems scalable and reliable.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- APPROACH -->
   <section id="approach" class="section">
     <div class="container">
       <p class="section-label reveal">How I Approach Work</p>
       <h2 class="section-title reveal">Three fundamentals</h2>
       <p class="approach-intro reveal">My work focuses on bringing structure and clarity to complex operational environments. I believe strong financial operations rely on three fundamentals.</p>
       <div class="approach-grid">
-        <div class="reveal">
-          <div class="approach-icon">01</div>
-          <p class="approach-title">Accuracy</p>
-          <p class="approach-desc">Financial information must be reliable and traceable. Every number should be explainable.</p>
-        </div>
-        <div class="reveal reveal-delay-1">
-          <div class="approach-icon">02</div>
-          <p class="approach-title">Structure</p>
-          <p class="approach-desc">Well-designed systems prevent problems before they occur. Clear workflows reduce confusion and improve accountability.</p>
-        </div>
-        <div class="reveal reveal-delay-2">
-          <div class="approach-icon">03</div>
-          <p class="approach-title">Clarity</p>
-          <p class="approach-desc">Data is most valuable when it supports better decisions. Reporting should make trends, risks, and opportunities easy to understand.</p>
-        </div>
+        <div class="reveal"><div class="approach-icon">01</div><p class="approach-title">Accuracy</p><p class="approach-desc">Financial information must be reliable and traceable. Every number should be explainable.</p></div>
+        <div class="reveal reveal-delay-1"><div class="approach-icon">02</div><p class="approach-title">Structure</p><p class="approach-desc">Well-designed systems prevent problems before they occur. Clear workflows reduce confusion and improve accountability.</p></div>
+        <div class="reveal reveal-delay-2"><div class="approach-icon">03</div><p class="approach-title">Clarity</p><p class="approach-desc">Data is most valuable when it supports better decisions. Reporting should make trends, risks, and opportunities easy to understand.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- CAPABILITIES -->
   <section id="capabilities" class="section">
     <div class="container">
       <p class="section-label reveal">Areas of Expertise</p>
       <h2 class="section-title reveal">Capabilities</h2>
       <div class="cap-grid">
-        <div class="cap-card reveal">
-          <p class="cap-category">01</p>
-          <p class="cap-title">Financial Oversight</p>
-          <ul class="cap-list">
-            <li class="cap-item">Budget monitoring & expense tracking</li>
-            <li class="cap-item">Variance analysis & fiscal accountability</li>
-            <li class="cap-item">Grant compliance & funding oversight</li>
-            <li class="cap-item">Account reconciliation</li>
-            <li class="cap-item">Operational financial reporting</li>
-          </ul>
-        </div>
-        <div class="cap-card reveal reveal-delay-1">
-          <p class="cap-category">02</p>
-          <p class="cap-title">Data & Analytics</p>
-          <ul class="cap-list">
-            <li class="cap-item">Excel systems & advanced formulas</li>
-            <li class="cap-item">Power BI dashboards & reporting</li>
-            <li class="cap-item">Financial dashboard design</li>
-            <li class="cap-item">Operational analytics & trend analysis</li>
-            <li class="cap-item">Data structuring and modeling</li>
-          </ul>
-        </div>
-        <div class="cap-card reveal reveal-delay-2">
-          <p class="cap-category">03</p>
-          <p class="cap-title">Operational Systems</p>
-          <ul class="cap-list">
-            <li class="cap-item">Workflow design & process improvement</li>
-            <li class="cap-item">Financial operations management</li>
-            <li class="cap-item">Automation systems & reporting workflows</li>
-            <li class="cap-item">Standard operating procedures</li>
-            <li class="cap-item">Operational structure & efficiency</li>
-          </ul>
-        </div>
-        <div class="cap-card reveal reveal-delay-3">
-          <p class="cap-category">04</p>
-          <p class="cap-title">Intelligent Tools</p>
-          <ul class="cap-list">
-            <li class="cap-item">Financial dashboards & reporting systems</li>
-            <li class="cap-item">Automation workflows</li>
-            <li class="cap-item">Grant management tools</li>
-            <li class="cap-item">Glide applications</li>
-            <li class="cap-item">Operational reporting platforms</li>
-          </ul>
-        </div>
+        <div class="cap-card reveal"><p class="cap-category">01</p><p class="cap-title">Financial Oversight</p><ul class="cap-list"><li class="cap-item">Budget monitoring & expense tracking</li><li class="cap-item">Variance analysis & fiscal accountability</li><li class="cap-item">Grant compliance & funding oversight</li><li class="cap-item">Account reconciliation</li><li class="cap-item">Operational financial reporting</li></ul></div>
+        <div class="cap-card reveal reveal-delay-1"><p class="cap-category">02</p><p class="cap-title">Data & Analytics</p><ul class="cap-list"><li class="cap-item">Excel systems & advanced formulas</li><li class="cap-item">Power BI dashboards & reporting</li><li class="cap-item">Financial dashboard design</li><li class="cap-item">Operational analytics & trend analysis</li><li class="cap-item">Data structuring and modeling</li></ul></div>
+        <div class="cap-card reveal reveal-delay-2"><p class="cap-category">03</p><p class="cap-title">Operational Systems</p><ul class="cap-list"><li class="cap-item">Workflow design & process improvement</li><li class="cap-item">Financial operations management</li><li class="cap-item">Automation systems & reporting workflows</li><li class="cap-item">Standard operating procedures</li><li class="cap-item">Operational structure & efficiency</li></ul></div>
+        <div class="cap-card reveal reveal-delay-3"><p class="cap-category">04</p><p class="cap-title">Intelligent Tools</p><ul class="cap-list"><li class="cap-item">Financial dashboards & reporting systems</li><li class="cap-item">Automation workflows</li><li class="cap-item">Grant management tools</li><li class="cap-item">Glide applications</li><li class="cap-item">Operational reporting platforms</li></ul></div>
       </div>
     </div>
   </section>
-
-  <!-- DIFFERENTIATOR -->
   <section id="differentiator" class="section">
     <div class="container">
       <p class="diff-label reveal">What Sets Me Apart</p>
@@ -329,76 +247,26 @@
       </div>
     </div>
   </section>
-
-  <!-- SELECTED WORK -->
   <section id="work" class="section">
     <div class="container">
       <p class="section-label reveal">Selected Work</p>
       <h2 class="section-title reveal">Anonymized case snapshots</h2>
       <div class="work-list reveal">
-        <div class="work-item">
-          <p class="work-index">Case 01 /</p>
-          <div>
-            <p class="work-title">Financial Reporting System Design</p>
-            <p class="work-desc">Designed structured reporting models that brought clarity to operational financial activity across multiple accounts and budget areas. Built tools that gave leadership real-time visibility into spending patterns, budget usage, and financial trends.</p>
-          </div>
-          <p class="work-outcome">Replaced manual tracking with a structured system — giving leadership faster, more reliable financial visibility.</p>
-        </div>
-        <div class="work-item">
-          <p class="work-index">Case 02 /</p>
-          <div>
-            <p class="work-title">Operational Data & Analytics System</p>
-            <p class="work-desc">Analyzed large operational datasets to surface patterns, inefficiencies, and reporting gaps. Developed data structures and dashboards that allowed leadership to understand resource allocation and operational activity with clarity.</p>
-          </div>
-          <p class="work-outcome">Transformed raw operational data into structured analytics — supporting better planning and reducing critical reporting gaps.</p>
-        </div>
-        <div class="work-item">
-          <p class="work-index">Case 03 /</p>
-          <div>
-            <p class="work-title">Workflow Automation & Process Improvement</p>
-            <p class="work-desc">Redesigned internal financial workflows by standardizing data tracking and automating repetitive reporting processes. Reduced time spent on manual compilation and improved consistency across financial monitoring systems.</p>
-          </div>
-          <p class="work-outcome">Automated manual processes and standardized workflows — significantly improving accuracy and operational efficiency.</p>
-        </div>
+        <div class="work-item"><p class="work-index">Case 01 /</p><div><p class="work-title">Financial Reporting System Design</p><p class="work-desc">Designed structured reporting models that brought clarity to operational financial activity across multiple accounts and budget areas. Built tools that gave leadership real-time visibility into spending patterns, budget usage, and financial trends.</p></div><p class="work-outcome">Replaced manual tracking with a structured system — giving leadership faster, more reliable financial visibility.</p></div>
+        <div class="work-item"><p class="work-index">Case 02 /</p><div><p class="work-title">Operational Data & Analytics System</p><p class="work-desc">Analyzed large operational datasets to surface patterns, inefficiencies, and reporting gaps. Developed data structures and dashboards that allowed leadership to understand resource allocation and operational activity with clarity.</p></div><p class="work-outcome">Transformed raw operational data into structured analytics — supporting better planning and reducing critical reporting gaps.</p></div>
+        <div class="work-item"><p class="work-index">Case 03 /</p><div><p class="work-title">Workflow Automation & Process Improvement</p><p class="work-desc">Redesigned internal financial workflows by standardizing data tracking and automating repetitive reporting processes. Reduced time spent on manual compilation and improved consistency across financial monitoring systems.</p></div><p class="work-outcome">Automated manual processes and standardized workflows — significantly improving accuracy and operational efficiency.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- TOOLS -->
-  <section id="tools" class="section">
-    <div class="container">
-      <p class="section-label reveal">Tools I Use</p>
-      <h2 class="section-title reveal">Systems & platforms</h2>
-      <p class="tools-intro reveal">I focus on tools that allow financial and operational data to become structured, transparent, and easy to analyze.</p>
-      <div class="tools-grid reveal">
-        <div class="tool-chip">Excel</div>
-        <div class="tool-chip">Power Query</div>
-        <div class="tool-chip">Power BI</div>
-        <div class="tool-chip">Data Modeling</div>
-        <div class="tool-chip">Workflow Automation</div>
-        <div class="tool-chip">Glide Applications</div>
-        <div class="tool-chip">Grant Management Systems</div>
-        <div class="tool-chip">Financial Dashboards</div>
-        <div class="tool-chip">Reporting Platforms</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PHILOSOPHY -->
   <section id="philosophy" class="section">
     <div class="container">
       <p class="section-label reveal">Professional Philosophy</p>
       <div class="philosophy-layout">
-        <div class="reveal">
-          <div class="philosophy-quote">Strong organizations run on clear systems.</div>
-          <p class="philosophy-sub">When financial information is accurate, processes are structured, and reporting is transparent, teams can focus their energy on solving real problems instead of managing confusion.</p>
-        </div>
+        <div class="reveal"><div class="philosophy-quote">Strong organizations run on clear systems.</div><p class="philosophy-sub">When financial information is accurate, processes are structured, and reporting is transparent, teams can focus their energy on solving real problems instead of managing confusion.</p></div>
         <p class="philosophy-right reveal reveal-delay-1">My goal is to design systems that make financial operations reliable — environments where the numbers are trustworthy, workflows are clear, and every decision is grounded in well-organized, accurate information.</p>
       </div>
     </div>
   </section>
-
-  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <p class="section-label reveal">Connect</p>
@@ -413,14 +281,7 @@
           <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required /></div>
           <div class="form-field">
             <label>Nature of inquiry</label>
-            <select name="inquiry">
-              <option value="" disabled selected>Select one</option>
-              <option>Full-time opportunity</option>
-              <option>Consulting or contract engagement</option>
-              <option>Collaboration or partnership</option>
-              <option>General question</option>
-              <option>Other</option>
-            </select>
+            <select name="inquiry"><option value="" disabled selected>Select one</option><option>Full-time opportunity</option><option>Consulting or contract engagement</option><option>Collaboration or partnership</option><option>General question</option><option>Other</option></select>
           </div>
           <div class="form-field"><label>Message</label><textarea name="message" rows="4" placeholder="Brief context on your situation or what you're looking for…"></textarea></div>
           <button type="submit" class="btn-submit">Send Message</button>
@@ -436,14 +297,12 @@
       </div>
     </div>
   </section>
-
   <footer>
     <div class="footer-inner">
       <span class="footer-name">© <span id="year"></span> Sergio Marroquin<span>.</span></span>
       <span class="footer-tagline">Financial Systems · Data · Operations</span>
     </div>
   </footer>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const cursor = document.getElementById('cursor');
@@ -451,7 +310,7 @@
     let mx=0,my=0,rx=0,ry=0;
     document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px';});
     (function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);})();
-    document.querySelectorAll('a,button,.tool-chip,.what-card,.cap-card').forEach(el=>{
+    document.querySelectorAll('a,button,.what-card,.cap-card').forEach(el=>{
       el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2.5)';ring.style.width='52px';ring.style.height='52px';});
       el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.width='34px';ring.style.height='34px';});
     });
