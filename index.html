@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sergio Marroquin — Financial Operations & Data Analysis</title>
+  <title>Sergio Marroquin — Financial Systems & Operations Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230F172A'/><text x='6' y='44' font-family='Georgia,serif' font-size='28' font-weight='700' fill='white'>SM</text><circle cx='56' cy='40' r='5' fill='%232563EB'/></svg>" />
-  <meta property="og:title" content="Sergio Marroquin — Financial Operations & Data Analysis" />
-  <meta property="og:description" content="I help organizations bring clarity to financial data, operational systems, and decision-making processes." />
+  <meta property="og:title" content="Sergio Marroquin — Financial Systems & Operations Analyst" />
+  <meta property="og:description" content="I build systems that help organizations manage finances more clearly by combining analytics, operational structure, and financial oversight." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.sergiomarroquin.com" />
   <meta property="og:image" content="https://www.sergiomarroquin.com/og-image.png" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Sergio Marroquin — Financial Operations & Data Analysis" />
-  <meta name="twitter:description" content="I help organizations bring clarity to financial data, operational systems, and decision-making processes." />
+  <meta name="twitter:title" content="Sergio Marroquin — Financial Systems & Operations Analyst" />
+  <meta name="twitter:description" content="I build systems that help organizations manage finances more clearly by combining analytics, operational structure, and financial oversight." />
   <meta name="twitter:image" content="https://www.sergiomarroquin.com/og-image.png" />
   <style>
     :root {
       --navy:#0F172A;--slate:#475569;
-      --accent:#1D4ED8;        /* richer, more saturated blue */
-      --accent-bright:#3B82F6; /* brighter blue for highlights */
-      --accent-lt:#DBEAFE;     /* more visible light blue */
-      --accent-md:#93C5FD;     /* stronger mid blue */
+      --accent:#1D4ED8;
+      --accent-bright:#3B82F6;
+      --accent-lt:#DBEAFE;
+      --accent-md:#93C5FD;
       --bg:#F8FAFC;--white:#FFFFFF;--rule:#E2E8F0;--text:#1E293B;--muted:#64748B;
       --font-display:'Syne',sans-serif;--font-mono:'IBM Plex Mono',monospace;--font-body:'IBM Plex Sans',sans-serif;--max:1120px;
     }
@@ -31,14 +31,9 @@
     html{scroll-behavior:smooth}
     body{font-family:var(--font-body);background:var(--bg);color:var(--text);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;cursor:none}
     a{color:inherit;text-decoration:none}ul{list-style:none}
-
-    /* CURSOR — brighter and more visible */
     .cursor{width:10px;height:10px;background:var(--accent-bright);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transition:transform 0.15s ease;transform:translate(-50%,-50%);box-shadow:0 0 12px rgba(59,130,246,0.7)}
     .cursor-ring{width:34px;height:34px;border:2px solid rgba(59,130,246,0.6);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transition:transform 0.35s ease,width 0.2s,height 0.2s;transform:translate(-50%,-50%)}
-
     .container{max-width:var(--max);margin:0 auto;padding:0 clamp(20px,5vw,64px)}
-
-    /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(248,250,252,0.92);backdrop-filter:blur(16px);border-bottom:2px solid var(--accent-lt)}
     .nav-inner{max-width:var(--max);margin:0 auto;padding:0 clamp(20px,5vw,64px);height:56px;display:flex;align-items:center;justify-content:space-between}
     .nav-logo{font-family:var(--font-mono);font-size:13px;font-weight:500;color:var(--navy);letter-spacing:0.06em}
@@ -48,8 +43,6 @@
     .nav-links a:hover{color:var(--accent)}
     .nav-cta{background:var(--accent)!important;color:#fff!important;padding:7px 18px;box-shadow:0 2px 12px rgba(29,78,216,0.35)}
     .nav-cta:hover{background:var(--accent-bright)!important}
-
-    /* HERO */
     #hero{min-height:100vh;display:flex;align-items:center;padding:100px 0 80px;position:relative;overflow:hidden}
     .hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.06) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
     .hero-bg-glow{position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(59,130,246,0.12) 0%,transparent 70%);pointer-events:none}
@@ -59,9 +52,9 @@
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
     .typing-cursor{display:inline-block;width:2px;height:13px;background:var(--accent-bright);margin-left:1px;vertical-align:middle;animation:blink 1s step-end infinite}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-
-    .hero-name{font-family:var(--font-display);font-size:clamp(48px,8vw,96px);font-weight:700;color:var(--navy);line-height:0.95;letter-spacing:-0.02em;margin-bottom:24px;opacity:0;animation:fadeUp 0.7s ease 0.5s forwards}
+    .hero-name{font-family:var(--font-display);font-size:clamp(36px,8vw,96px);font-weight:700;color:var(--navy);line-height:0.95;letter-spacing:-0.02em;margin-bottom:24px;opacity:0;animation:fadeUp 0.7s ease 0.5s forwards}
     .hero-name .dot{color:var(--accent-bright);text-shadow:0 0 20px rgba(59,130,246,0.5)}
+    .hero-identity{font-family:var(--font-mono);font-size:clamp(11px,1.4vw,13px);color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0;animation:fadeUp 0.7s ease 0.65s forwards;font-weight:500}
     .hero-tagline{font-family:var(--font-mono);font-size:clamp(11px,1.4vw,13px);color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.7s ease 0.7s forwards}
     .hero-tagline .sep{color:var(--accent-bright);opacity:0.6}
     .hero-desc{font-size:clamp(16px,2vw,19px);color:var(--slate);font-weight:300;max-width:54ch;line-height:1.65;margin-bottom:12px;opacity:0;animation:fadeUp 0.7s ease 0.9s forwards}
@@ -73,14 +66,10 @@
     .btn-secondary:hover{border-color:var(--accent);background:var(--accent-lt);transform:translateY(-2px)}
     .hero-focus{margin-top:56px;padding-top:28px;border-top:1px solid var(--accent-lt);font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:0.08em;opacity:0;animation:fadeUp 0.7s ease 1.4s forwards}
     .hero-focus span{color:var(--accent-bright)}
-
-    /* SECTIONS */
     .section{padding:clamp(64px,10vw,112px) 0;border-top:1px solid var(--rule)}
     .section-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:12px;display:flex;align-items:center;gap:12px}
     .section-label::before{content:'';width:24px;height:2px;background:var(--accent-bright)}
     h2.section-title{font-family:var(--font-display);font-size:clamp(28px,4vw,44px);font-weight:600;color:var(--navy);line-height:1.15;letter-spacing:-0.01em;margin-bottom:48px}
-
-    /* WHAT I DO */
     .what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--accent-lt);border:2px solid var(--accent-lt)}
     .what-card{background:var(--white);padding:40px 32px;position:relative;overflow:hidden;transition:background 0.25s}
     .what-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-bright));transform:scaleX(0);transform-origin:left;transition:transform 0.3s ease}
@@ -89,8 +78,6 @@
     .what-num{font-family:var(--font-mono);font-size:10px;color:var(--accent-bright);letter-spacing:0.12em;margin-bottom:20px;font-weight:500}
     .what-title{font-family:var(--font-display);font-size:18px;font-weight:600;color:var(--navy);margin-bottom:14px}
     .what-desc{font-size:14px;color:var(--muted);line-height:1.7;max-width:none}
-
-    /* APPROACH — dark section, blue accents pop more here */
     #approach{background:var(--navy);border-top:none}
     #approach .section-label{color:var(--accent-bright)}
     #approach .section-label::before{background:var(--accent-bright)}
@@ -100,8 +87,6 @@
     .approach-icon{width:44px;height:44px;border:2px solid var(--accent-bright);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--accent-bright);font-family:var(--font-mono);font-size:12px;font-weight:500;box-shadow:0 0 16px rgba(59,130,246,0.2)}
     .approach-title{font-family:var(--font-display);font-size:20px;font-weight:600;color:#fff;margin-bottom:12px}
     .approach-desc{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.7}
-
-    /* CAPABILITIES */
     .cap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
     .cap-card{border:1px solid var(--rule);padding:32px;background:var(--white);transition:border-color 0.2s,box-shadow 0.2s}
     .cap-card:hover{border-color:var(--accent-bright);box-shadow:0 4px 32px rgba(59,130,246,0.12)}
@@ -112,7 +97,16 @@
     .cap-item{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
     .cap-item::before{content:'';width:5px;height:5px;background:var(--accent-bright);border-radius:50%;flex-shrink:0;opacity:0.8}
 
-    /* WORK */
+    /* DIFFERENTIATOR BLOCK */
+    #differentiator{background:var(--navy);border-top:none}
+    .diff-inner{max-width:780px}
+    .diff-label{font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent-bright);margin-bottom:28px;display:flex;align-items:center;gap:12px}
+    .diff-label::before{content:'';width:24px;height:2px;background:var(--accent-bright)}
+    .diff-line1{font-family:var(--font-display);font-size:clamp(16px,2.5vw,22px);font-weight:400;color:rgba(255,255,255,0.45);line-height:1.5;margin-bottom:16px}
+    .diff-line1 span{color:rgba(255,255,255,0.7)}
+    .diff-line2{font-family:var(--font-display);font-size:clamp(22px,3.5vw,36px);font-weight:700;color:#fff;line-height:1.25;letter-spacing:-0.01em;position:relative;padding-left:24px}
+    .diff-line2::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:linear-gradient(to bottom,var(--accent-bright),rgba(59,130,246,0.2))}
+
     .work-list{display:flex;flex-direction:column;gap:1px;background:var(--accent-lt);border:1px solid var(--accent-lt)}
     .work-item{background:var(--white);padding:40px;display:grid;grid-template-columns:80px 1fr 1fr;gap:40px;align-items:start;transition:background 0.2s}
     .work-item:hover{background:#F0F7FF}
@@ -120,28 +114,22 @@
     .work-title{font-family:var(--font-display);font-size:17px;font-weight:600;color:var(--navy);margin-bottom:10px}
     .work-desc{font-size:13px;color:var(--muted);line-height:1.7}
     .work-outcome{font-size:13px;color:var(--accent);line-height:1.7;padding-left:20px;border-left:3px solid var(--accent-bright)}
-
-    /* TOOLS */
     .tools-intro{font-size:14px;color:var(--muted);max-width:58ch;margin-bottom:40px}
     .tools-grid{display:flex;flex-wrap:wrap;gap:12px}
     .tool-chip{border:1px solid var(--accent-md);background:var(--white);padding:10px 20px;font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:0.06em;display:flex;align-items:center;gap:8px;transition:border-color 0.2s,color 0.2s,background 0.2s,box-shadow 0.2s}
     .tool-chip::before{content:'';width:5px;height:5px;background:var(--accent-bright);border-radius:50%;opacity:0.7;transition:opacity 0.2s}
     .tool-chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-lt);box-shadow:0 2px 12px rgba(59,130,246,0.15)}
     .tool-chip:hover::before{opacity:1}
-
-    /* PHILOSOPHY */
     .philosophy-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
     .philosophy-quote{font-family:var(--font-display);font-size:clamp(22px,3vw,32px);font-weight:600;color:var(--navy);line-height:1.3;letter-spacing:-0.01em;position:relative;padding-left:28px}
     .philosophy-quote::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:4px;background:linear-gradient(to bottom,var(--accent-bright),var(--accent-lt))}
     .philosophy-sub{margin-top:20px;font-size:14px;color:var(--muted);line-height:1.75;font-weight:300}
     .philosophy-right{font-size:14px;color:var(--muted);line-height:1.85;font-weight:300}
-
-    /* CONTACT */
     #contact{background:var(--navy);border-top:none}
     #contact .section-label{color:var(--accent-bright)}
     #contact .section-label::before{background:var(--accent-bright)}
     #contact h2.section-title{color:#fff}
-    .contact-intro{font-size:15px;color:rgba(255,255,255,0.45);margin-bottom:48px;font-weight:300}
+    .contact-intro{font-size:15px;color:rgba(255,255,255,0.4);margin-bottom:48px;font-weight:300}
     .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px}
     .contact-form{display:flex;flex-direction:column;gap:16px}
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -159,23 +147,17 @@
     .linkedin-btn{display:inline-flex;align-items:center;gap:12px;border:2px solid var(--accent-bright);color:var(--accent-bright);padding:14px 24px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;width:fit-content;transition:border-color 0.2s,color 0.2s,background 0.2s,box-shadow 0.2s}
     .linkedin-btn:hover{background:var(--accent-bright);color:#fff;box-shadow:0 4px 16px rgba(59,130,246,0.4)}
     .contact-disclaimer{margin-top:48px;padding-top:24px;border-top:1px solid rgba(59,130,246,0.15);font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:0.06em;line-height:1.7}
-
-    /* FOOTER */
     footer{background:#080F1D;padding:28px 0;border-top:2px solid rgba(59,130,246,0.2)}
     .footer-inner{max-width:var(--max);margin:0 auto;padding:0 clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between}
     .footer-name{font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.35);letter-spacing:0.08em}
     .footer-name span{color:var(--accent-bright)}
     .footer-tagline{font-family:var(--font-mono);font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:0.1em}
-
-    /* ANIMATIONS */
     @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
     .reveal-delay-1{transition-delay:0.1s}
     .reveal-delay-2{transition-delay:0.2s}
     .reveal-delay-3{transition-delay:0.3s}
-
-    /* RESPONSIVE */
     @media(max-width:900px){
       .what-grid,.approach-grid{grid-template-columns:1fr}
       .cap-grid{grid-template-columns:1fr}
@@ -216,66 +198,173 @@
         <span id="typingText"></span><span class="typing-cursor"></span>
       </div>
       <h1 class="hero-name">SERGIO<br>MARROQUIN<span class="dot">.</span></h1>
+      <p class="hero-identity">Financial Systems & Operations Analyst</p>
       <p class="hero-tagline">
-        <span>Financial Operations</span><span class="sep">/</span>
-        <span>Data Analysis</span><span class="sep">/</span>
-        <span>Systems Thinking</span>
+        <span>Finance</span><span class="sep">/</span>
+        <span>Data</span><span class="sep">/</span>
+        <span>Operations</span>
       </p>
-      <p class="hero-desc">I help organizations bring clarity to financial data, operational systems, and decision-making processes.</p>
-      <p class="hero-subdesc">Focused on building structured financial reporting, scalable workflows, and data tools that support accurate decisions.</p>
+      <p class="hero-desc">Where finance, data, and operations meet.</p>
+      <p class="hero-subdesc">I build systems that help organizations manage finances more clearly — combining analytics, operational structure, and financial oversight to turn complex processes into reliable systems.</p>
       <div class="hero-buttons">
         <a href="#work" class="btn-primary">View My Work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         <a href="#contact" class="btn-secondary">Contact <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></a>
       </div>
-      <p class="hero-focus"><span>// currently focused on</span> &nbsp;financial analytics &nbsp;·&nbsp; reporting systems &nbsp;·&nbsp; operational finance in complex organizations</p>
+      <p class="hero-focus"><span>// currently focused on</span> &nbsp;financial systems &nbsp;·&nbsp; data analytics &nbsp;·&nbsp; operational finance</p>
     </div>
   </section>
+
+  <!-- WHAT I DO -->
   <section id="what" class="section">
     <div class="container">
       <p class="section-label reveal">What I Do</p>
       <h2 class="section-title reveal">Three areas of focus</h2>
       <div class="what-grid">
-        <div class="what-card reveal"><p class="what-num">01 /</p><p class="what-title">Financial Analysis</p><p class="what-desc">Monitoring budgets, identifying variances, and translating financial data into clear insights that leadership can act on.</p></div>
-        <div class="what-card reveal reveal-delay-1"><p class="what-num">02 /</p><p class="what-title">Operational Systems</p><p class="what-desc">Designing structured workflows and reporting systems that improve financial accountability and reduce manual processes.</p></div>
-        <div class="what-card reveal reveal-delay-2"><p class="what-num">03 /</p><p class="what-title">Data & Reporting</p><p class="what-desc">Building data models and dashboards using tools like Excel, Power BI, and automation platforms to transform raw data into decision-ready information.</p></div>
+        <div class="what-card reveal">
+          <p class="what-num">01 /</p>
+          <p class="what-title">Financial Oversight</p>
+          <p class="what-desc">Monitoring budgets, tracking expenses, and analyzing variances to keep organizations fiscally accountable and grant-compliant.</p>
+        </div>
+        <div class="what-card reveal reveal-delay-1">
+          <p class="what-num">02 /</p>
+          <p class="what-title">Data & Analytics</p>
+          <p class="what-desc">Building Excel systems, Power BI dashboards, and financial reporting tools that transform raw operational data into clear, decision-ready insights.</p>
+        </div>
+        <div class="what-card reveal reveal-delay-2">
+          <p class="what-num">03 /</p>
+          <p class="what-title">Operational Systems</p>
+          <p class="what-desc">Designing workflows, automating reporting processes, and building the operational structure that makes financial systems scalable and reliable.</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- APPROACH -->
   <section id="approach" class="section">
     <div class="container">
       <p class="section-label reveal">How I Approach Work</p>
       <h2 class="section-title reveal">Three fundamentals</h2>
       <p class="approach-intro reveal">My work focuses on bringing structure and clarity to complex operational environments. I believe strong financial operations rely on three fundamentals.</p>
       <div class="approach-grid">
-        <div class="reveal"><div class="approach-icon">01</div><p class="approach-title">Accuracy</p><p class="approach-desc">Financial information must be reliable and traceable. Every number should be explainable.</p></div>
-        <div class="reveal reveal-delay-1"><div class="approach-icon">02</div><p class="approach-title">Structure</p><p class="approach-desc">Well-designed systems prevent problems before they occur. Clear workflows reduce confusion and improve accountability.</p></div>
-        <div class="reveal reveal-delay-2"><div class="approach-icon">03</div><p class="approach-title">Clarity</p><p class="approach-desc">Data is most valuable when it supports better decisions. Reporting should make trends, risks, and opportunities easy to understand.</p></div>
+        <div class="reveal">
+          <div class="approach-icon">01</div>
+          <p class="approach-title">Accuracy</p>
+          <p class="approach-desc">Financial information must be reliable and traceable. Every number should be explainable.</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="approach-icon">02</div>
+          <p class="approach-title">Structure</p>
+          <p class="approach-desc">Well-designed systems prevent problems before they occur. Clear workflows reduce confusion and improve accountability.</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="approach-icon">03</div>
+          <p class="approach-title">Clarity</p>
+          <p class="approach-desc">Data is most valuable when it supports better decisions. Reporting should make trends, risks, and opportunities easy to understand.</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- CAPABILITIES -->
   <section id="capabilities" class="section">
     <div class="container">
       <p class="section-label reveal">Areas of Expertise</p>
       <h2 class="section-title reveal">Capabilities</h2>
       <div class="cap-grid">
-        <div class="cap-card reveal"><p class="cap-category">01</p><p class="cap-title">Financial Operations</p><ul class="cap-list"><li class="cap-item">Budget monitoring</li><li class="cap-item">Variance analysis</li><li class="cap-item">Forecast tracking</li><li class="cap-item">Account reconciliation</li><li class="cap-item">Operational financial reporting</li></ul></div>
-        <div class="cap-card reveal reveal-delay-1"><p class="cap-category">02</p><p class="cap-title">Grant & Compliance Support</p><ul class="cap-list"><li class="cap-item">Grant tracking</li><li class="cap-item">Financial documentation</li><li class="cap-item">Compliance monitoring</li><li class="cap-item">Reporting preparation</li><li class="cap-item">Funding oversight support</li></ul></div>
-        <div class="cap-card reveal reveal-delay-2"><p class="cap-category">03</p><p class="cap-title">Data & Analytics</p><ul class="cap-list"><li class="cap-item">Excel — advanced formulas, Power Query</li><li class="cap-item">Power BI dashboards</li><li class="cap-item">Data structuring and modeling</li><li class="cap-item">Operational reporting systems</li></ul></div>
-        <div class="cap-card reveal reveal-delay-3"><p class="cap-category">04</p><p class="cap-title">Process Improvement</p><ul class="cap-list"><li class="cap-item">Workflow design</li><li class="cap-item">Standard operating procedures</li><li class="cap-item">Automation of repetitive reporting tasks</li><li class="cap-item">Operational efficiency improvements</li></ul></div>
+        <div class="cap-card reveal">
+          <p class="cap-category">01</p>
+          <p class="cap-title">Financial Oversight</p>
+          <ul class="cap-list">
+            <li class="cap-item">Budget monitoring & expense tracking</li>
+            <li class="cap-item">Variance analysis & fiscal accountability</li>
+            <li class="cap-item">Grant compliance & funding oversight</li>
+            <li class="cap-item">Account reconciliation</li>
+            <li class="cap-item">Operational financial reporting</li>
+          </ul>
+        </div>
+        <div class="cap-card reveal reveal-delay-1">
+          <p class="cap-category">02</p>
+          <p class="cap-title">Data & Analytics</p>
+          <ul class="cap-list">
+            <li class="cap-item">Excel systems & advanced formulas</li>
+            <li class="cap-item">Power BI dashboards & reporting</li>
+            <li class="cap-item">Financial dashboard design</li>
+            <li class="cap-item">Operational analytics & trend analysis</li>
+            <li class="cap-item">Data structuring and modeling</li>
+          </ul>
+        </div>
+        <div class="cap-card reveal reveal-delay-2">
+          <p class="cap-category">03</p>
+          <p class="cap-title">Operational Systems</p>
+          <ul class="cap-list">
+            <li class="cap-item">Workflow design & process improvement</li>
+            <li class="cap-item">Financial operations management</li>
+            <li class="cap-item">Automation systems & reporting workflows</li>
+            <li class="cap-item">Standard operating procedures</li>
+            <li class="cap-item">Operational structure & efficiency</li>
+          </ul>
+        </div>
+        <div class="cap-card reveal reveal-delay-3">
+          <p class="cap-category">04</p>
+          <p class="cap-title">Intelligent Tools</p>
+          <ul class="cap-list">
+            <li class="cap-item">Financial dashboards & reporting systems</li>
+            <li class="cap-item">Automation workflows</li>
+            <li class="cap-item">Grant management tools</li>
+            <li class="cap-item">Glide applications</li>
+            <li class="cap-item">Operational reporting platforms</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- DIFFERENTIATOR -->
+  <section id="differentiator" class="section">
+    <div class="container">
+      <p class="diff-label reveal">What Sets Me Apart</p>
+      <div class="diff-inner reveal">
+        <p class="diff-line1">Most finance professionals <span>analyze numbers.</span></p>
+        <p class="diff-line2">I design systems that make financial operations structured, transparent, and scalable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
   <section id="work" class="section">
     <div class="container">
       <p class="section-label reveal">Selected Work</p>
       <h2 class="section-title reveal">Anonymized case snapshots</h2>
       <div class="work-list reveal">
-        <div class="work-item"><p class="work-index">Case 01 /</p><div><p class="work-title">Financial Reporting System Development</p><p class="work-desc">Designed structured reporting models that helped track operational financial activity across multiple accounts and operational areas. Built tools that improved visibility into spending patterns, budget usage, and financial trends.</p></div><p class="work-outcome">Improved leadership visibility into spending patterns and financial trends — enabling faster, more informed budget decisions.</p></div>
-        <div class="work-item"><p class="work-index">Case 02 /</p><div><p class="work-title">Operational Data Analysis</p><p class="work-desc">Analyzed large operational datasets to identify patterns, inefficiencies, and reporting gaps. Developed data structures that allowed leadership to better understand operational activity and resource allocation.</p></div><p class="work-outcome">Surfaced actionable patterns in resource allocation, supporting more effective operational planning and reducing critical reporting gaps.</p></div>
-        <div class="work-item"><p class="work-index">Case 03 /</p><div><p class="work-title">Workflow and Process Improvement</p><p class="work-desc">Improved internal processes by standardizing data tracking and reporting workflows. Reduced time spent on manual data compilation and improved accuracy in financial monitoring.</p></div><p class="work-outcome">Significantly reduced manual compilation time and improved the accuracy and consistency of ongoing financial monitoring.</p></div>
+        <div class="work-item">
+          <p class="work-index">Case 01 /</p>
+          <div>
+            <p class="work-title">Financial Reporting System Design</p>
+            <p class="work-desc">Designed structured reporting models that brought clarity to operational financial activity across multiple accounts and budget areas. Built tools that gave leadership real-time visibility into spending patterns, budget usage, and financial trends.</p>
+          </div>
+          <p class="work-outcome">Replaced manual tracking with a structured system — giving leadership faster, more reliable financial visibility.</p>
+        </div>
+        <div class="work-item">
+          <p class="work-index">Case 02 /</p>
+          <div>
+            <p class="work-title">Operational Data & Analytics System</p>
+            <p class="work-desc">Analyzed large operational datasets to surface patterns, inefficiencies, and reporting gaps. Developed data structures and dashboards that allowed leadership to understand resource allocation and operational activity with clarity.</p>
+          </div>
+          <p class="work-outcome">Transformed raw operational data into structured analytics — supporting better planning and reducing critical reporting gaps.</p>
+        </div>
+        <div class="work-item">
+          <p class="work-index">Case 03 /</p>
+          <div>
+            <p class="work-title">Workflow Automation & Process Improvement</p>
+            <p class="work-desc">Redesigned internal financial workflows by standardizing data tracking and automating repetitive reporting processes. Reduced time spent on manual compilation and improved consistency across financial monitoring systems.</p>
+          </div>
+          <p class="work-outcome">Automated manual processes and standardized workflows — significantly improving accuracy and operational efficiency.</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- TOOLS -->
   <section id="tools" class="section">
     <div class="container">
       <p class="section-label reveal">Tools I Use</p>
@@ -287,25 +376,34 @@
         <div class="tool-chip">Power BI</div>
         <div class="tool-chip">Data Modeling</div>
         <div class="tool-chip">Workflow Automation</div>
-        <div class="tool-chip">Reporting Systems</div>
-        <div class="tool-chip">Documentation Platforms</div>
+        <div class="tool-chip">Glide Applications</div>
+        <div class="tool-chip">Grant Management Systems</div>
+        <div class="tool-chip">Financial Dashboards</div>
+        <div class="tool-chip">Reporting Platforms</div>
       </div>
     </div>
   </section>
+
+  <!-- PHILOSOPHY -->
   <section id="philosophy" class="section">
     <div class="container">
       <p class="section-label reveal">Professional Philosophy</p>
       <div class="philosophy-layout">
-        <div class="reveal"><div class="philosophy-quote">Strong organizations run on clear systems.</div><p class="philosophy-sub">When financial information is accurate, processes are structured, and reporting is transparent, teams can focus their energy on solving real problems instead of managing confusion.</p></div>
-        <p class="philosophy-right reveal reveal-delay-1">My goal is to contribute to building those systems — environments where the numbers are trustworthy, the workflows are clear, and decisions are grounded in accurate, well-organized information.</p>
+        <div class="reveal">
+          <div class="philosophy-quote">Strong organizations run on clear systems.</div>
+          <p class="philosophy-sub">When financial information is accurate, processes are structured, and reporting is transparent, teams can focus their energy on solving real problems instead of managing confusion.</p>
+        </div>
+        <p class="philosophy-right reveal reveal-delay-1">My goal is to design systems that make financial operations reliable — environments where the numbers are trustworthy, workflows are clear, and every decision is grounded in well-organized, accurate information.</p>
       </div>
     </div>
   </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
       <p class="section-label reveal">Connect</p>
       <h2 class="section-title reveal">Get in touch</h2>
-      <p class="contact-intro reveal">For professional inquiries, collaboration opportunities, or general questions, feel free to reach out.</p>
+      <p class="contact-intro reveal">Open to senior roles, consulting engagements, and conversations about financial systems, data analytics, and operational finance.</p>
       <div class="contact-layout">
         <form class="contact-form reveal" action="https://formspree.io/f/mqeyzzkr" method="POST">
           <div class="form-row">
@@ -315,13 +413,20 @@
           <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required /></div>
           <div class="form-field">
             <label>Nature of inquiry</label>
-            <select name="inquiry"><option value="" disabled selected>Select one</option><option>Full-time opportunity</option><option>Consulting or contract engagement</option><option>Collaboration or partnership</option><option>General question</option><option>Other</option></select>
+            <select name="inquiry">
+              <option value="" disabled selected>Select one</option>
+              <option>Full-time opportunity</option>
+              <option>Consulting or contract engagement</option>
+              <option>Collaboration or partnership</option>
+              <option>General question</option>
+              <option>Other</option>
+            </select>
           </div>
           <div class="form-field"><label>Message</label><textarea name="message" rows="4" placeholder="Brief context on your situation or what you're looking for…"></textarea></div>
           <button type="submit" class="btn-submit">Send Message</button>
         </form>
         <div class="contact-right reveal reveal-delay-1">
-          <p class="contact-note">Open to senior roles, consulting engagements, and conversations about financial operations and data systems.</p>
+          <p class="contact-note">I specialize in financial systems, data analytics, and operational finance. If you're looking for someone who builds clarity into complex financial environments, let's talk.</p>
           <a href="https://www.linkedin.com/in/sergiofinance" class="linkedin-btn" target="_blank">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn Profile
@@ -331,12 +436,14 @@
       </div>
     </div>
   </section>
+
   <footer>
     <div class="footer-inner">
       <span class="footer-name">© <span id="year"></span> Sergio Marroquin<span>.</span></span>
-      <span class="footer-tagline">Financial Operations · Data Analysis · Systems Thinking</span>
+      <span class="footer-tagline">Financial Systems · Data · Operations</span>
     </div>
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const cursor = document.getElementById('cursor');
@@ -348,7 +455,7 @@
       el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2.5)';ring.style.width='52px';ring.style.height='52px';});
       el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.width='34px';ring.style.height='34px';});
     });
-    const lines=['Analyzing financial systems...','Structuring data...','Building clarity...','Ready.'];
+    const lines=['Designing financial systems...','Structuring operational data...','Building clarity...','Ready.'];
     let li=0,ci=0,deleting=false;
     const typEl=document.getElementById('typingText');
     function type(){
